@@ -1,0 +1,454 @@
+#include<stdio.h>
+#define TAM 10
+
+int acerto, erro;
+
+void imprime_menu(){
+  printf(" #=====================#                                                                                     \n");
+  printf(" # AJUDE A ONCA JOVITA #                                                                                     \n");
+  printf(" #=====================#                                                                                     \n\n\n");
+  printf("\n#==================================================================================================#\n");
+	printf("#                                                                                                  #  \n");
+	printf("# Ola, amigo(a)! Eu me chamo Jovita e recebi este convite especial do grande rei de Amazolandia:   #  \n");
+	printf("#                                                                                                  #  \n");
+	printf("#==================================================================================================#  \n");
+	printf("                                   #                                                                  \n");
+	printf("                                 #   <<Prezada guerreira Onca Jovita,                                 \n");
+	printf("                               #      devido as grandes contribuicoes que tem feito por tantos anos ao reino\n");
+	printf(" . '''.  . ''''''''' .  .''' .        de Amazolandia, eu a convoco para ser a minha sucessora de reinado.\n");
+	printf(".       .             .      .        Você ja demonstrou a sua forca fisica e destreza em inumeras    \n");
+	printf(" .                          .         oportunidades protegendo o nosso lar, mas, para que o meu desejo seja\n");
+	printf("  .      [0]       [0]     .          concretizado, preciso que realize um teste de conhecimentos gerais, para\n");
+	printf("    .                     .           mostrar ao nosso povo que esta apta a governa-los utilizando mais do\n");
+	printf("    .         .....       .           que musculos.>>                                                 \n");
+	printf("     .    ==   '.'   ==  .                                                                            \n");
+	printf("      .      '..'..'    .                                                                             \n");
+	printf("         .           .                                                                                \n");
+	printf("            '''''''                                                                                   \n\n\n");
+	printf("\n#==================================================================================================#\n\n\n");
+
+	system("pause");
+    system("cls");
+
+	printf("\n#==================================================================================================#\n");
+	printf("#                                                                                                  #  \n");
+	printf("# Faz muito tempo que conclui os meu estudos e fiquei sabendo que voce                             #  \n");
+	printf("# manda muito bem. Que tal me ajudar a me preparar para esse teste?                                #  \n");
+	printf("# Tenho certeza que, com as suas licoes, vamos arrasar!!                                           #  \n");
+	printf("#                                                                                                  #  \n");
+	printf("#==================================================================================================#  \n");
+	printf("                                   #                                                                  \n");
+	printf("                                 #                                                                    \n");
+	printf("                               #                                                                      \n");
+	printf(" . '''.  . ''''''''' .  .''' .                                                                        \n");
+	printf(".       .             .      .                                                                        \n");
+	printf(" .                          .                                                                         \n");
+	printf("  .      [0]       [0]     .                                                                          \n");
+	printf("    .                     .                                                                           \n");
+	printf("    .         .....       .                                                                           \n");
+	printf("     .    ==   '.'   ==  .                                                                            \n");
+	printf("      .      '..'..'    .                                                                             \n");
+	printf("         .           .                                                                                \n");
+	printf("            '''''''                                                                                   \n\n\n");
+	printf("================================================================================================================\n");
+	printf("                      Iniciar o jogo?                                                                            \n");
+	printf("                 [ 1 - SIM ]   [ 2 - SAIR ]                                                                      \n");
+	printf("================================================================================================================\n");
+
+}
+
+void pergunta_portugues(){
+
+	printf("\n#==================================================================================================#\n");
+	printf("#                                                                                                  #  \n");
+	printf("# Amazolandia e um reino muito LINDO e seus moradores sao extremamente CORAJOSOS. Ele              #  \n");
+	printf("# fica PROXIMO a um GRANDE rio.                                                                    #  \n");
+	printf("#                                                                                                  #  \n");
+	printf("#==================================================================================================#  \n");
+	printf("                                   #                                                                  \n");
+	printf("                                 #                                                                    \n");
+	printf("                               #                                                                      \n");
+	printf(" . '''.  . ''''''''' .  .''' .                                                                        \n");
+	printf(".       .             .      .                                                                        \n");
+	printf(" .                          .                                                                         \n");
+	printf("  .      [0]       [0]     .                                                                          \n");
+	printf("    .                     .                                                                           \n");
+	printf("    .         .....       .                                                                           \n");
+	printf("     .    ==   '.'   ==  .                                                                            \n");
+	printf("      .      '..'..'    .                                                                             \n");
+	printf("         .           .                                                                                \n");
+	printf("            '''''''                                                                                   \n\n\n");
+
+	printf("================================================================================================================\n");
+	printf("Marque a alternativa que apresenta, respectivamente, os SINONIMOS das palavras em                               \n");
+	printf("destaque na frase dita pela onça Jovita.                                                                        \n");
+	printf("================================================================================================================\n");
+	printf("1) feio, covardes, longe, pequeno\n");
+	printf("2) bonito, destemidos, perto, amplo\n");
+	printf("3) lindao, muito corajosos, super perto, grandao\n");
+	printf("4) lindinho, corajosinhos, pertinho, grandinho\n");
+}
+
+void pergunta_ciencia(){
+
+	printf("\n#==================================================================================================#\n");
+	printf("#                                                                                                  #  \n");
+	printf("# Em Amazolandia, ha dias que sao muito quentes e outros,que sao muito frios. Sabendo disso, e     #  \n");
+	printf("# importante conhecer formas eficazes de se aquecer ou se resfriar.                                #  \n");
+	printf("#                                                                                                  #  \n");
+	printf("#==================================================================================================#  \n");
+	printf("                                   #                                                                  \n");
+	printf("                                 #                                                                    \n");
+	printf("                               #                                                                      \n");
+	printf(" . '''.  . ''''''''' .  .''' .                                                                        \n");
+	printf(".       .             .      .                                                                        \n");
+	printf(" .                          .                                                                         \n");
+	printf("  .      [0]       [0]     .                                                                          \n");
+	printf("    .                     .                                                                           \n");
+	printf("    .         .....       .                                                                           \n");
+	printf("     .    ==   '.'   ==  .                                                                            \n");
+	printf("      .      '..'..'    .                                                                             \n");
+	printf("         .           .                                                                                \n");
+	printf("            '''''''                                                                                   \n\n\n");
+
+	printf("================================================================================================================\n");
+	printf("Selecione a seguir um objeto que e um bom condutor de calor e um que e um mau condutor de calor, respectivamente.\n");
+	printf("================================================================================================================\n");
+	printf("1) Panela de ferro e copo de papel.\n");
+	printf("2) Panela de ferro e chaleira de cobre.\n");
+	printf("3) Luvas de la e lancheira de plastico.\n");
+	printf("4) Copo de papel e chaleira de cobre.\n");
+}
+
+void pergunta_historia(){
+
+	printf("\n#==================================================================================================#\n");
+	printf("#                                                                                                  #  \n");
+	printf("# Para governar um povo, e essencial ter conhecimentos sobre a formacao e a organizacao das        #  \n");
+	printf("# sociedades.                                                                                      #  \n");
+	printf("#                                                                                                  #  \n");
+	printf("#==================================================================================================#  \n");
+	printf("                                   #                                                                  \n");
+	printf("                                 #                                                                    \n");
+	printf("                               #                                                                      \n");
+	printf(" . '''.  . ''''''''' .  .''' .                                                                        \n");
+	printf(".       .             .      .                                                                        \n");
+	printf(" .                          .                                                                         \n");
+	printf("  .      [0]       [0]     .                                                                          \n");
+	printf("    .                     .                                                                           \n");
+	printf("    .         .....       .                                                                           \n");
+	printf("     .    ==   '.'   ==  .                                                                            \n");
+	printf("      .      '..'..'    .                                                                             \n");
+	printf("         .           .                                                                                \n");
+	printf("            '''''''                                                                                   \n\n\n");
+
+	printf("================================================================================================================\n");
+	printf("Quando as sociedades comecaram a se formar as pequenas comunidades se instalavam,                               \n");
+	printf("normalmente, proximos a grandes rios. Isso ocorria principalmente porque:                                       \n");
+	printf("================================================================================================================\n");
+	printf("1) as pessoas queriam ficar proximas a lugares em que pudessem tomar banho.\n");
+	printf("2) era importante ter um lugar para pescar ja que era o unico meio para conseguir alimentos.\n");
+	printf("3) era mais facil se locomover utilizando transporte aquatico, como barcos e canoas.\n");
+	printf("4) era importante ter acesso a agua potavel para consumo e para o desenvolvimento da agricultura.\n");
+}
+
+void pergunta_matematica(){
+	printf("\n#==================================================================================================#\n");
+	printf("#                                                                                                  #  \n");
+	printf("# As vilas de Amazolandia estao precisando de novas casas e, para construi-las, e necessario um    #  \n");
+	printf("# bom conhecimento de formas geometricas.                                                          #  \n");
+	printf("#                                                                                                  #  \n");
+	printf("#==================================================================================================#  \n");
+	printf("                                   #\n");
+	printf("                                 #\n");
+	printf("                               #\n");
+	printf(" . '''.  . ''''''''' .  .''' .                                     #########                          \n");
+	printf(".       .             .      .                                    #       ##                          \n");
+	printf(" .                          .                                    #       # #                          \n");
+	printf("  .      [0]       [0]     .                     #              #       #  #                          \n");
+	printf("    .                     .                     ###            #########   #                          \n");
+	printf("    .         .....       .                    #####           #       #  #                           \n");
+	printf("     .    ==   '.'   ==  .                    #######          #       # #                            \n");
+	printf("      .      '..'..'    .                    #########         #       ##                             \n");
+	printf("         .           .                      ###########        #########                              \n");
+	printf("            '''''''                                                                                   \n\n");
+
+	printf("================================================================================================================\n");
+	printf("Sabendo que uma forma geometrica espacial e formada de faces, vertices e arestas, assinale a                    \n");
+	printf("afirmacao correta.                                                                                              \n");
+	printf("================================================================================================================\n");
+	printf("1) Uma piramide de base quadrada tem 5 faces, 6 arestas e 5 vertices.                                           \n");
+	printf("2) Um cubo tem 4 faces, 4 arestas e 4 vertices.                                                                 \n");
+	printf("3) Uma piramide de base triangular tem 4 faces, 6 arestas e 4 vertices.                                         \n");
+	printf("4) Um prisma de base triangular tem 5 faces, 7 arestas e 6 vertices.                                             \n");
+}
+
+void pergunta_geografia(){
+
+
+	printf("\n#==================================================================================================#\n");
+	printf("#                                                                                                  #\n");
+	printf("# Para governar em um reino que eh uma floresta e muito importante ter um bom senso de direcao e,  #\n");
+	printf("# em condicoes extremas, saber ate mesmo se guiar por meio da localizacao do Sol.                  #\n");
+	printf("#                                                                                                  #\n");
+	printf("#==================================================================================================#\n");
+	printf("                                   #\n");
+	printf("                                 #\n");
+	printf("                               #\n");
+	printf(" . '''.  . ''''''''' .  .''' .                                                                    \n");
+	printf(".       .             .      .     Quando estendemos o braco direito para a direcao em que o Sol      \n");
+	printf(" .                          .      aparece no horizonte pela manha, estamos apontando                 \n");
+	printf("  .      [0]       [0]     .       para o ________. Se estamos com braco esquerdo estendido para      \n");
+	printf("    .                     .        a direcao em que o Sol desaparece no horizonte no fim da tarde,    \n");
+	printf("    .         .....       .        pontamos para o ________. A nossa frente,                          \n");
+	printf("     .    ==   '.'   ==  .         estara o ________ e, atras de nas, o ________.                     \n");
+	printf("      .      '..'..'    .                                                                              \n");
+	printf("         .           .                                                                                \n");
+	printf("            '''''''                                                                                   \n\n\n");
+
+	printf("================================================================================================================\n");
+	printf("Marque a opcao que completa correta e respectivamente as lacunas a seguir com as direcoes cardeais.\n");
+	printf("================================================================================================================\n");
+	printf("1) oeste, leste, norte, sul\n");
+	printf("2) norte, sul, leste, oeste\n");
+	printf("3) leste, oeste, sul, norte\n");
+	printf("4) leste, oeste, norte, sul\n");
+
+}
+
+void voce_acertou(){
+
+	printf("\n\n          VOCE ACERTOU!!! \n\n");
+	printf("\n\n . '''.  . ''''''''' .  .''' .                                                                    \n");
+	printf(".       .             .      .              0000   0000                                               \n");
+	printf(" .                          .             00     0     00                                             \n");
+	printf("  .      [0]       [0]     .              00           00                                             \n");
+	printf("    .                     .                 00       00                                               \n");
+	printf("    .         .....       .                   00   00                                                 \n");
+	printf("     .    ==   '.'   ==  .                      000                                                   \n");
+	printf("      .      '..'..'    .                                                                             \n");
+	printf("         .           .                                                                                \n");
+	printf("            '''''''                                                                                   \n\n\n");
+}
+
+void voce_errou(){
+
+		printf("\n\n        Nao foi dessa vez                                                                       \n\n");
+		printf(" . '''.  . ''''''''' .  .''' .                                                                      \n");
+		printf(".       .             .      .                                                                      \n");
+		printf(" .                          .                                                                       \n");
+		printf("  .      [0]       [0]     .                                                                        \n");
+		printf("    .  .*             *.  .                                                                         \n");
+		printf("    .         .....      .                                                                          \n");
+		printf("     .    ==   '.'   ==  .                                                                          \n");
+		printf("      .      ...'...    .                                                                           \n");
+		printf("         .           .                                                                              \n");
+		printf("            '''''''                                                                                 \n");
+}
+void rainha_jovita(){
+	 printf("         *     *     *                                                                                \n");
+   printf("         ##   ###   ##                                                                                \n");
+   printf("         ### ##### ###                                                                                \n");
+	 printf("         #############                                                                                \n");
+   printf("         *************                                                                                \n");
+   printf(" . '''.  . ''''''''' .  .''' .       #==============================================================# \n");
+	 printf(".       .             .      .       #   UAU!!! VOCE E INCRIVEL!                                    # \n");
+	 printf(" .                          .        #   Com a sua ajuda eu sei que vou conseguir                   # \n");
+	 printf("  .      [0]       [0]     .         #   ser a Rainha de Amazolandia                                # \n");
+	 printf("    .                     .       #  # =============================================================# \n");
+	 printf("    .         .....       .     #                                                                     \n");
+	 printf("     .    ==   '.'   ==  .   #                                                                        \n");
+	 printf("      .      '..'..'    .                                                                             \n");
+	 printf("         .           .                                                                                \n");
+	 printf("            '''''''                                                                                   \n\n\n");
+}
+
+void jovita_naorainha(){
+   printf("                                                                                                      \n");
+   printf("                                                                                                      \n");
+   printf(" . '''.  . ''''''''' .  .''' .       #==============================================================# \n");
+	 printf(".       .             .      .       #  Que pena!                                                   # \n");
+	 printf(" .                          .        #  Nao foi dessa vez.                                          # \n");
+	 printf("  .      [0]       [0]     .         #                                                              # \n");
+	 printf("    .   .*           *.    .       # # =============================================================# \n");
+	 printf("    .         .....       .     #                                                                     \n");
+	 printf("     .    ==   '.'   ==  .   #                                                                        \n");
+	 printf("      .      ...'...    .                                                                             \n");
+	 printf("         .           .                                                                                \n");
+	 printf("            '''''''                                                                                   \n\n\n");
+}
+
+
+void imprime_q(int questao){
+
+//vamos puxar cada questão daqui, se necessario, criar mais uma funcao void
+
+//usar uma variavel iteradora para chamar a pergunta em sequencia
+//preferivel usar switch case
+
+//armazenar todas as questoes aqui
+
+    switch (questao){
+
+        case 1:
+            pergunta_portugues();
+            break;
+
+        case 2:
+            pergunta_ciencia();
+            break;
+
+        case 3:
+            pergunta_historia();
+            break;
+
+        case 4:
+            pergunta_matematica();
+            break;
+
+        case 5:
+            pergunta_geografia();
+            break;
+
+        default:
+            break;
+    }
+}
+
+int verifica_acerto(int questao, int resposta){
+
+    switch(questao){
+
+        case 1:
+            if(resposta == 2){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+            break;
+
+        case 2:
+            if(resposta == 1){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+            break;
+
+         case 3:
+            if(resposta == 4){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+            break;
+
+         case 4:
+            if(resposta == 3){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+            break;
+
+        case 5:
+            if(resposta == 4){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+            break;
+
+        default:
+            break;
+    }
+}
+
+void imprime_placar(int jogadores, int vetor_placar[TAM]){
+
+    int i;
+
+    for(i = 0; i < jogadores; i++){
+        printf("Jogador %d: %d pontos\n", 1+i, vetor_placar[i]);
+    }
+}
+
+int main(){
+
+    int vetor_placar[TAM];
+    int questao, resposta, jogadores, opcao, jogo = 1, j = 0;
+
+    imprime_menu();
+    scanf("%d", &opcao);
+
+    switch(opcao){
+
+        case 1:
+
+            do{
+                printf("Digite a quantidade de jogadores: ");
+                scanf("%d", &jogadores);
+            }while(jogadores <= 0 || jogadores > 10);
+
+            system("cls");
+
+            do{
+
+                acerto = 0;
+                erro = 0;
+
+                for(questao = 1; questao <= 5; questao++){
+
+                    printf("\nJogador %d\n", jogo);
+
+                    imprime_q(questao);
+                    scanf("%d", &resposta);
+
+                    if(verifica_acerto(questao, resposta) == 1){
+                        voce_acertou();
+                        acerto++;
+                    }
+                    else{
+                       voce_errou();
+                        erro++;
+                    }
+
+                    if(acerto == 5){
+                        rainha_jovita();
+                    }
+                    else if(erro == 5){
+                        jovita_naorainha();
+                    }
+
+                    system("pause");
+                    system("cls");
+                }
+
+
+
+                vetor_placar[j] = acerto;
+                j++;
+
+                jogo++;
+
+
+            }while(jogo <= jogadores);
+
+            imprime_placar(jogadores, vetor_placar);
+
+            break;
+
+    case 2:
+        break;
+
+    default:
+        printf("Comando Invalido\n");
+    }
+
+    return 0;
+}
